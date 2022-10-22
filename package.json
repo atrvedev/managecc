@@ -2,6 +2,7 @@
   "name": "admin-chungcu",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://atrvedev.github.io/managecc/",
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.0",
     "@testing-library/jest-dom": "^5.16.4",
@@ -11,6 +12,7 @@
     "axios": "^0.27.2",
     "draft-js": "^0.11.7",
     "draftjs-to-html": "^0.9.1",
+    "gh-pages": "^4.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-draft-wysiwyg": "^1.15.0",
@@ -28,7 +30,9 @@
     "build-docker": "rimraf build && react-scripts build",
     "docker-build-container": "docker buildx build --platform linux/amd64 -t antrwongdev/admin-chungcu:chungcu-1.0 --rm .",
     "docker-start-container": "docker run -p 3000:80 -t antrwongdev/admin-chungcu:chungcu-1.0",
-    "docker-push": "docker push antrwongdev/admin-chungcu:chungcu-1.0"
+    "docker-push": "docker push antrwongdev/admin-chungcu:chungcu-1.0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
