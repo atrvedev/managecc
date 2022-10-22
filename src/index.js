@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   // <BrowserRouter>
-  <HistoryRouter history={HistoryService}>
+  <HistoryRouter history={HistoryService} basename="/managecc">
     <App />
   </HistoryRouter>
   // </BrowserRouter>

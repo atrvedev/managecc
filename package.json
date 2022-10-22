@@ -2,7 +2,7 @@
   "name": "admin-chungcu",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://atrvedev.github.io/managecc",
+  "homepage": "https://atrvedev.github.io/managecc/",
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.0",
     "@testing-library/jest-dom": "^5.16.4",
