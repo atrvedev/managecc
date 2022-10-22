@@ -1,0 +1,6 @@
+version: "3.2"
+services:
+  admin-chungcu:
+    image: antrwongdev/admin-chungcu:chungcu-1.0
+    ports:
+      - "3000:80"
